@@ -25,8 +25,8 @@ const Hero = () => {
           <div className="relative">
             <div className="bg-white p-4 rounded-lg shadow-elegant">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                alt="REACH CAD Software Interface" 
+                src="/lovable-uploads/2600e299-ec87-42ce-9ba9-ec6428d8f58c.png" 
+                alt="Designer using REACH CAD software to create 3D garment patterns" 
                 className="w-full h-auto rounded-lg"
               />
             </div>
