@@ -1,132 +1,93 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Check, X } from "lucide-react";
 
 const ComparisonTable = () => {
   const features = [
     {
       feature: "Built for Fashion Industry",
-      manual: false,
-      adobe: false,
-      reach: true,
-      reachNote: "✓"
+      manual: "❌",
+      adobe: "❌", 
+      reach: "✅"
     },
     {
       feature: "Preloaded Libraries",
-      manual: false,
-      adobe: false,
-      reach: true,
-      reachNote: "Extensive libraries"
+      manual: "❌",
+      adobe: "❌",
+      reach: "Extensive libraries"
     },
     {
       feature: "Collaboration Tools",
-      manual: false,
+      manual: "❌", 
       adobe: "Limited",
-      reach: true,
-      reachNote: "Seamless collaboration"
+      reach: "Seamless collaboration"
     },
     {
       feature: "AI-Powered Design Tools",
-      manual: false,
-      adobe: "Limited",
-      reach: true,
-      reachNote: "Advanced AI capabilities"
+      manual: "❌",
+      adobe: "Limited", 
+      reach: "Advanced AI capabilities"
     },
     {
       feature: "Speed of Design",
       manual: "Slow",
       adobe: "Moderate",
-      reach: "SuperFast",
-      reachNote: ""
+      reach: "Superfast"
     }
   ];
 
   return (
-    <section className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Why Designers Choose <span className="text-primary">REACH</span>
+          <h2 className="text-3xl font-bold text-[#B91C56] mb-6">
+            Why Designers Choose REACH
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            When compared to manual methods or general-purpose graphic design software like Adobe Illustrator, 
-            REACH CAD stands out as the ultimate choice for fashion professionals.
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            When compared to manual methods or general-purpose graphic design software like Adobe Illustrator, REACH CAD stands out as the ultimate choice for fashion professionals.
           </p>
         </div>
 
-        <Card className="overflow-hidden shadow-card">
-          <CardHeader className="bg-muted/50">
-            <div className="grid grid-cols-4 gap-4 text-center">
-              <CardTitle className="text-sm font-semibold text-muted-foreground">
-                FEATURE
-              </CardTitle>
-              <CardTitle className="text-sm font-semibold text-muted-foreground">
-                MANUAL METHODS
-              </CardTitle>
-              <CardTitle className="text-sm font-semibold text-muted-foreground">
-                ADOBE ILLUSTRATOR
-              </CardTitle>
-              <CardTitle className="text-sm font-semibold text-primary">
-                REACH FASHION STUDIO
-              </CardTitle>
-            </div>
-          </CardHeader>
-          <CardContent className="p-0">
-            {features.map((row, index) => (
-              <div key={index} className="grid grid-cols-4 gap-4 border-b border-border last:border-b-0">
-                <div className="p-4 font-medium text-foreground bg-muted/20">
-                  {row.feature}
-                </div>
-                <div className="p-4 text-center">
-                  {typeof row.manual === 'boolean' ? (
-                    row.manual ? (
-                      <Check className="h-5 w-5 text-green-600 mx-auto" />
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-4 font-semibold text-gray-800">FEATURE</th>
+                <th className="text-center p-4 font-semibold text-gray-800">MANUAL METHODS</th>
+                <th className="text-center p-4 font-semibold text-gray-800">ADOBE ILLUSTRATOR</th>
+                <th className="text-center p-4 font-semibold text-gray-800">REACH FASHION STUDIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((item, index) => (
+                <tr key={index} className="border-b border-gray-200">
+                  <td className="p-4 font-medium text-gray-700">{item.feature}</td>
+                  <td className="p-4 text-center">
+                    {item.manual === "❌" ? (
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-red-500 mx-auto" />
-                    )
-                  ) : (
-                    <Badge variant="outline" className="text-orange-600 border-orange-600">
-                      {row.manual}
-                    </Badge>
-                  )}
-                </div>
-                <div className="p-4 text-center">
-                  {typeof row.adobe === 'boolean' ? (
-                    row.adobe ? (
-                      <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      <span className="text-gray-600">{item.manual}</span>
+                    )}
+                  </td>
+                  <td className="p-4 text-center">
+                    {item.adobe === "❌" ? (
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    ) : item.adobe === "Limited" ? (
+                      <span className="text-[#B91C56] text-sm">{item.adobe}</span>
                     ) : (
-                      <X className="h-5 w-5 text-red-500 mx-auto" />
-                    )
-                  ) : (
-                    <Badge variant="outline" className="text-yellow-600 border-yellow-600">
-                      {row.adobe}
-                    </Badge>
-                  )}
-                </div>
-                <div className="p-4 text-center bg-accent/20">
-                  {typeof row.reach === 'boolean' ? (
-                    row.reach ? (
-                      <div className="flex items-center justify-center gap-2">
-                        <Check className="h-5 w-5 text-green-600" />
-                        {row.reachNote && (
-                          <span className="text-sm text-primary font-medium">
-                            {row.reachNote}
-                          </span>
-                        )}
-                      </div>
+                      <span className="text-gray-600">{item.adobe}</span>
+                    )}
+                  </td>
+                  <td className="p-4 text-center">
+                    {item.reach === "✅" ? (
+                      <Check className="w-5 h-5 text-green-600 mx-auto" />
                     ) : (
-                      <X className="h-5 w-5 text-red-500 mx-auto" />
-                    )
-                  ) : (
-                    <Badge className="bg-primary text-primary-foreground">
-                      {row.reach}
-                    </Badge>
-                  )}
-                </div>
-              </div>
-            ))}
-          </CardContent>
-        </Card>
+                      <span className="text-[#B91C56] text-sm font-medium">{item.reach}</span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   );
