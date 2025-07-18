@@ -2,48 +2,42 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/561093c9-8798-42ba-9e2e-f42f63dbb3f8.png" 
-          alt="REACH CAD workspace background" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10">
-        {/* Top tagline */}
-        <div className="text-center pt-8 pb-16">
-          <p className="text-sm font-medium text-white/90 max-w-2xl mx-auto px-4">
-            REACH CAD helps Apparel Firms Enhance Profitability and Ship Orders Fast by Saving Fabric and Time
-          </p>
-        </div>
-        
-        {/* Main content centered */}
-        <div className="flex items-center justify-center min-h-[60vh] px-4">
-          <div className="text-center">
-            {/* Welcome message with background */}
-            <div className="bg-white/95 backdrop-blur-sm p-8 lg:p-12 rounded-lg shadow-elegant max-w-2xl mx-auto">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-8">
-                <span className="text-reach-purple">Welcome</span> to<br />
-                <span className="text-gray-700">REACH CAD!</span>
-              </h1>
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4">
-                Request a Demo
-              </Button>
+    <section className="relative bg-reach-gradient-subtle py-20 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <p className="text-sm font-medium text-primary uppercase tracking-wide">
+                REACH CAD helps Apparel Firms Enhance Profitability and Ship Orders Fast by Saving Fabric and Time
+              </p>
+              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-card">
+                <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+                  <span className="text-reach-purple">Welcome</span> to<br />
+                  <span className="text-2xl lg:text-3xl">REACH CAD!</span>
+                </h1>
+                <Button variant="cta" size="lg" className="mt-6">
+                  Request a Demo
+                </Button>
+              </div>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <div className="bg-white p-4 rounded-lg shadow-elegant">
+              <img 
+                src="/lovable-uploads/2600e299-ec87-42ce-9ba9-ec6428d8f58c.png" 
+                alt="Designer using REACH CAD software to create 3D garment patterns" 
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
-        
-        {/* Bottom tagline */}
-        <div className="text-center pb-12">
-          <p className="text-lg text-white font-medium max-w-4xl mx-auto px-4">
-            REACH CAD helps Apparel Firms Enhance Profitability, and Ship Orders Fast by Saving Fabric and Time.
-          </p>
-        </div>
+      </div>
+      
+      <div className="mt-16 text-center">
+        <p className="text-lg text-primary font-medium max-w-4xl mx-auto px-4">
+          REACH CAD helps Apparel Firms Enhance Profitability, and Ship Orders Fast by Saving Fabric and Time.
+        </p>
       </div>
     </section>
   );
