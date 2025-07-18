@@ -41,7 +41,7 @@ const ComparisonTable = () => {
           <h2 className="text-3xl font-bold text-[#B91C56] mb-6">
             Why Designers Choose REACH
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-black max-w-3xl mx-auto">
             When compared to manual methods or general-purpose graphic design software like Adobe Illustrator, REACH CAD stands out as the ultimate choice for fashion professionals.
           </p>
         </div>
@@ -50,21 +50,21 @@ const ComparisonTable = () => {
           <table className="w-full">
             <thead>
               <tr className="bg-gray-50">
-                <th className="text-left p-4 font-semibold text-gray-800">FEATURE</th>
-                <th className="text-center p-4 font-semibold text-gray-800">MANUAL METHODS</th>
-                <th className="text-center p-4 font-semibold text-gray-800">ADOBE ILLUSTRATOR</th>
-                <th className="text-center p-4 font-semibold text-gray-800">REACH FASHION STUDIO</th>
+                <th className="text-left p-4 font-semibold text-[#B91C56]">FEATURE</th>
+                <th className="text-center p-4 font-semibold text-[#B91C56]">MANUAL METHODS</th>
+                <th className="text-center p-4 font-semibold text-[#B91C56]">ADOBE ILLUSTRATOR</th>
+                <th className="text-center p-4 font-semibold text-[#B91C56]">REACH FASHION STUDIO</th>
               </tr>
             </thead>
             <tbody>
               {features.map((item, index) => (
                 <tr key={index} className="border-b border-gray-200">
-                  <td className="p-4 font-medium text-gray-700">{item.feature}</td>
+                  <td className="p-4 font-medium text-[#B91C56]">{item.feature}</td>
                   <td className="p-4 text-center">
                     {item.manual === "❌" ? (
                       <X className="w-5 h-5 text-red-500 mx-auto" />
                     ) : (
-                      <span className="text-gray-600">{item.manual}</span>
+                      <span className="text-[#B91C56]">{item.manual}</span>
                     )}
                   </td>
                   <td className="p-4 text-center">
@@ -73,7 +73,7 @@ const ComparisonTable = () => {
                     ) : item.adobe === "Limited" ? (
                       <span className="text-[#B91C56] text-sm">{item.adobe}</span>
                     ) : (
-                      <span className="text-gray-600">{item.adobe}</span>
+                      <span className="text-[#B91C56]">{item.adobe}</span>
                     )}
                   </td>
                   <td className="p-4 text-center">
