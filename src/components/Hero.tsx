@@ -21,8 +21,8 @@ const Hero = () => {
       </div>
 
       {/* Central welcome message */}
-      <div className="absolute inset-0 flex items-center justify-end pr-32 pt-20 pb-32">
-        <div className="bg-white/20 backdrop-blur-sm px-12 py-6 text-center">
+      <div className="absolute inset-0 flex items-center justify-end pr-16 pt-20 pb-32">
+        <div className="bg-white/50 backdrop-blur-sm px-12 py-6 text-center">
           <h2 className="text-5xl font-bold mb-4">
             <span className="text-[#8A2BE2]">Wel</span><span className="text-gray-400">co</span><span className="text-[#8A2BE2]">me</span> <span className="text-gray-600">to</span>
             <br />
