@@ -21,12 +21,12 @@ const Hero = () => {
       </div>
 
       {/* Central welcome message */}
-      <div className="absolute inset-0 flex items-center justify-end pr-16 pt-20 pb-32">
-        <div className="bg-white/50 backdrop-blur-sm px-12 py-6 text-center">
-          <h2 className="text-5xl font-bold mb-4">
-            <span className="text-[#8A2BE2]">Wel</span><span className="text-gray-400">co</span><span className="text-[#8A2BE2]">me</span> <span className="text-gray-600">to</span>
+      <div className="absolute inset-0 flex items-center justify-center pr-32 pt-20 pb-32">
+        <div className="bg-white/90 backdrop-blur-sm px-16 py-12 text-center rounded-lg">
+          <h2 className="text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#8A2BE2] via-gray-500 to-[#8A2BE2]">
+            Welcome to
             <br />
-            <span className="text-gray-600">REACH CAD!</span>
+            REACH CAD!
           </h2>
         </div>
       </div>
