@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background image covering entire page */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/b9ce3481-6190-4f92-9368-2bc034499f48.png" 
+          src="/lovable-uploads/9e92abf1-d3d8-4d8a-bd11-7722688835de.png" 
           alt="Designer using REACH CAD software" 
           className="w-full h-full object-cover"
         />
@@ -21,11 +21,11 @@ const Hero = () => {
       </div>
 
       {/* Welcome message positioned on the right side */}
-      <div className="absolute top-1/2 right-32 transform -translate-y-1/2 z-20">
-        <div className="bg-white/95 backdrop-blur-sm px-12 py-8 text-center rounded-lg">
+      <div className="absolute top-1/2 right-24 transform -translate-y-1/2 z-20">
+        <div className="bg-white/95 backdrop-blur-sm px-16 py-12 text-center">
           <h2 className="text-6xl font-bold text-transparent bg-clip-text" style={{
             WebkitBackgroundClip: 'text',
-            backgroundImage: 'url(/lovable-uploads/b9ce3481-6190-4f92-9368-2bc034499f48.png)',
+            backgroundImage: 'url(/lovable-uploads/9e92abf1-d3d8-4d8a-bd11-7722688835de.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}>
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       {/* Request Demo button positioned below welcome message */}
-      <div className="absolute bottom-32 right-32 z-20">
+      <div className="absolute bottom-32 right-24 z-20">
         <Button className="bg-[#B91C56] hover:bg-[#A01747] text-white px-8 py-3 rounded-full font-medium text-lg">
           Request a Demo
         </Button>
