@@ -5,10 +5,10 @@ const ComparisonTable = () => {
 
         {/* Title */}
         <h2 className="text-center text-4xl font-bold text-primary mb-4">
-          Why Designers choose REACH Cut Planner?
+          What makes REACH Cut Planner the best apparel cut order planning software?
         </h2>
         <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
-          Compared to Manual Methods, Getber AccuPlan, and FastReact Fabric, REACH Cut Planner is the only solution that offers complete automation, full optimization, and guaranteed results — making it the most advanced and reliable choice for apparel manufacturers.
+          Compared to Manual Methods, Gerber AccuPlan, and FastReact Fabric, REACH Cut Planner is the only solution that offers complete automation, full optimization, and guaranteed results — making it the most advanced and reliable choice for apparel manufacturers.
         </p>
 
         {/* Table */}
@@ -18,7 +18,7 @@ const ComparisonTable = () => {
               <tr>
                 <th className="py-4 px-6 font-semibold">FEATURE</th>
                 <th className="py-4 px-6 font-semibold">MANUAL METHODS</th>
-                <th className="py-4 px-6 font-semibold">GETBER ACCUPLAN</th>
+                <th className="py-4 px-6 font-semibold">GERBER ACCUPLAN</th>
                 <th className="py-4 px-6 font-semibold">FASTREACT FABRIC</th>
                 <th className="py-4 px-6 font-semibold text-primary">REACH CUT PLANNER</th>
               </tr>
