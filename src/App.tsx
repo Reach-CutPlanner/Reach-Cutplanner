@@ -6,7 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Home/Index";
 import NotFound from "./pages/NotFound";
 import AboutPage from "@/pages/About/About";
+import Benefits from "@/pages/Benefits/Benefits";
 import Presentations from "@/pages/Presentations/Presentations";
+import Articles from "@/pages/Articles/Articles";
+import Rcpimages from "@/pages/Rcpimages/Rcpimages";
+import CaseStudies from "@/pages/CaseStudies/CaseStudies";
 import SalesPartners from  "@/pages/SalesPartners/SalesPartners";
 import TrainingPartners from "@/pages/TrainingPartners/TrainingPartners"
 import GovernmentAgencies from "@/pages/GovernmentAgencies/GovernmentAgencies"
@@ -25,7 +29,11 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/benefits" element={<Benefits />} />
                 <Route path="/presentations" element={<Presentations />} />
+                <Route path="/articles" element={<Articles />} />
+                <Route path="/casestudies" element={<CaseStudies />} />
+                <Route path="/rcpimages" element={<Rcpimages />} />
                 <Route path="/SalesPartners" element={<SalesPartners />} />
                 <Route path="/TrainingPartners" element={<TrainingPartners />} />
                 <Route path="/GovernmentAgencies" element={<GovernmentAgencies />} />

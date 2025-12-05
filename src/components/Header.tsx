@@ -19,7 +19,7 @@ const Header = () => {
           </Link>
 
           <div className="text-sm sm:text-base text-gray-700 md:block w-full md:w-1/2 lg:w-1/3 text-left md:text-right leading-tight">
-              REACH Cut Planner enables Intellignet Cut Order Planning for Apparel Organizations
+              REACH Cut Planner enables Intelligent Cut Order Planning for Apparel Organizations
           </div>
 
         </div>

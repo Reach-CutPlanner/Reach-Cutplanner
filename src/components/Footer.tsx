@@ -11,7 +11,7 @@ const Footer = () => {
     { label: "Benefits of REACH Cut Planner", path: "/benefits" },
     // { label: "Learning Guides", path: "/learningguide" },
     { label: "Presentations", path: "/presentations" },
-    { label: "REACH Cut Planner Images", path: "/rfsimages" },
+    { label: "REACH Cut Planner Images", path: "/rcpimages" },
     { label: "Articles", path: "/articles" },
     { label: "Case Studies", path: "/casestudies" },
 
@@ -31,7 +31,7 @@ const Footer = () => {
               <span className="text-primary">REACH</span> Cut Planner
             </Link>
             <p className="text-gray-300 max-w-md">
-              REACH Cut planner enables Intellignet Cut Order Planning for Apparel Organizations
+              REACH Cut planner enables Intelligent Cut Order Planning for Apparel Organizations
             </p>
 
 
