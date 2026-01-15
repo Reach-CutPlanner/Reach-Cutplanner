@@ -15,7 +15,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center justify-end gap-5 text-sm sm:text-base">
 
             <div className="flex items-center gap-2">
-              <img src={emailIcon} alt="email icon" className="w-5 sm:w-6" />
+              <img src={emailIcon} alt="Email icon for contacting REACH Cut Planner" className="w-5 sm:w-6" />
               <span>info@reach-tech.com</span>
             </div>
 
@@ -25,7 +25,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <img src={whatsappIcon} alt="whatsapp icon" className="w-5 sm:w-6" />
+              <img src={whatsappIcon} alt="WhatsApp icon for REACH Cut Planner support" className="w-5 sm:w-6" />
               <span>+91 84592 78496</span>
             </a>
 
@@ -35,7 +35,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <img src={contactIcon} alt="contact icon" className="w-5 sm:w-6" />
+              <img src={contactIcon} alt="Contact form icon for REACH Technologies" className="w-5 sm:w-6" />
               <span>Write to Us</span>
             </a>
 
