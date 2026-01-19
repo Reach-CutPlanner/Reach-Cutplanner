@@ -3,7 +3,7 @@ const WhoIsThisFor = () => {
     <section className="py-14 bg-gray-50">
       <div className="container mx-auto px-4">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-primary">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-6f50aa">
           Who is REACH Cut Planner for?
         </h2>
 
@@ -15,7 +15,7 @@ const WhoIsThisFor = () => {
 
           {/* Apparel Manufacturers */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Apparel manufacturers and exporters
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -26,7 +26,7 @@ const WhoIsThisFor = () => {
 
           {/* Domestic Brands */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Domestic brands and multi-store retailers
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -37,7 +37,7 @@ const WhoIsThisFor = () => {
 
           {/* Cutting Rooms */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Cutting rooms and subcontractors
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -48,7 +48,7 @@ const WhoIsThisFor = () => {
 
           {/* ERP Integrators */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Apparel ERP and technology integrators
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -59,7 +59,7 @@ const WhoIsThisFor = () => {
 
           {/* Training */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Training centres and universities
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -70,7 +70,7 @@ const WhoIsThisFor = () => {
 
           {/* Consultants */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-3">
+            <h3 className="text-xl font-bold text-9c76cc mb-3">
               Consultants and cost-optimization service providers
             </h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">

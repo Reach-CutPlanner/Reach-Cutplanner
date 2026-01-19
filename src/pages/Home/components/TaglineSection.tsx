@@ -3,7 +3,7 @@ const TaglineSection = () => {
     <section className="py-5 bg-white text-primary">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-xl md:text-xl font-bold">
+          <h2 className="text-xl md:text-xl font-bold text-9c76cc">
             REACH Cut Planner enables Intelligent Cut Order Planning for Apparel Organizations.
           </h2>
         </div>

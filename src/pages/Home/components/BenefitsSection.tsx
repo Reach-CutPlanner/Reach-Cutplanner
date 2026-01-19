@@ -1,39 +1,44 @@
-import { Clock, Users, TrendingUp, Star } from "lucide-react";
+import markerIcon from "@/assets/marker.png";
+import pliesIcon from "@/assets/plies.png";
+import spreadIcon from "@/assets/spread.png";
+import rollsIcon from "@/assets/rolls.png";
+import manageIcon from "@/assets/manage.png";
+import fabricIcon from "@/assets/fabric.png";
 
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: Clock,
+      icon: markerIcon,
       title: "Automated Marker Allocation",
       description: "Streamline your cutting process with intelligent marker placement that optimizes fabric usage and reduces waste.",
       color: "text-[#B91C56]"
     },
     {
-      icon: Users,
+      icon: pliesIcon,
       title: "Automated Plies Allocation", 
       description: "Efficiently manage fabric layers with automated ply allocation that ensures accurate cutting specifications.",
       color: "text-[#B91C56]"
     },
     {
-      icon: TrendingUp,
+      icon: spreadIcon,
       title: "Automated Spread Planning",
       description: "Optimize fabric spreading operations with intelligent planning that maximizes efficiency and minimizes material waste.",
       color: "text-[#B91C56]"
     },
     {
-      icon: Star,
+      icon: rollsIcon,
       title: "Automated Rolls Management",
       description: "Track and manage fabric rolls seamlessly with automated inventory control and real-time monitoring.",
       color: "text-[#B91C56]"
     },
     {
-      icon: Clock,
+      icon: manageIcon,
       title: "Informed Management Decisions",
       description: "Enables informed management decisions by capture and analysis of Cutting Room data.",
       color: "text-[#B91C56]"
     },
     {
-      icon: Users,
+      icon: fabricIcon,
       title: "Fabric Reconciliation", 
       description: "Maintain accurate fabric inventory with comprehensive reconciliation tools that track usage and optimize stock levels.",
       color: "text-[#B91C56]"
@@ -44,7 +49,7 @@ const BenefitsSection = () => {
     <section className="py-16 bg-white text-primary">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#B91C56] mb-4">
+          <h2 className="text-4xl font-bold text-primary mb-4">
             Benefits of REACH Cut Planner
           </h2>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
@@ -52,22 +57,33 @@ const BenefitsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <div key={index} className="bg-gray-200 p-6 flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <Icon className="w-16 h-16 text-[#B91C56]" strokeWidth={1.5} />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-[#B91C56] mb-3 leading-tight">{benefit.title}</h3>
-                  <p className="text-gray-700 text-base leading-relaxed">{benefit.description}</p>
-                </div>
-              </div>
-            );
-          })}
+<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+  {benefits.map((benefit, index) => (
+    <div
+      key={index}
+      className="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+    >
+      <div className="flex items-start space-x-4">
+        <div className="bg-f8b8d1 p-3 rounded-lg flex-shrink-0">
+          <img
+            src={benefit.icon}
+            alt={benefit.title}
+            className="w-10 h-10"
+          />
         </div>
+        <div>
+          <h3 className="text-xl font-bold text-ea6aad mb-3 leading-tight">
+            {benefit.title}
+          </h3>
+          <p className="text-gray-700 text-base leading-relaxed">
+            {benefit.description}
+          </p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ const ComparisonTable = () => {
        <div className="container mx-auto px-4 overflow-x-auto">
 
         {/* Title */}
-        <h2 className="text-center text-4xl font-bold text-primary mb-4">
+        <h2 className="text-center text-4xl font-bold text-primary mb-4 text-6f50aa">
           What makes REACH Cut Planner the best apparel cut order planning software?
         </h2>
         <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
@@ -20,7 +20,7 @@ const ComparisonTable = () => {
                 <th className="py-4 px-6 font-semibold">MANUAL METHODS</th>
                 <th className="py-4 px-6 font-semibold">GERBER ACCUPLAN</th>
                 <th className="py-4 px-6 font-semibold">FASTREACT FABRIC</th>
-                <th className="py-4 px-6 font-semibold text-primary">REACH CUT PLANNER</th>
+                <th className="py-4 px-6 font-semibold text-9c76cc">REACH CUT PLANNER</th>
               </tr>
             </thead>
 
@@ -31,7 +31,7 @@ const ComparisonTable = () => {
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-gray-700">Partial</td>
-                <td className="py-4 px-6 text-primary">YES</td>
+                <td className="py-4 px-6 text-9c76cc">YES</td>
               </tr>
 
               {/* Row 2 */}
@@ -40,7 +40,7 @@ const ComparisonTable = () => {
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-gray-700">Partial</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
-                <td className="py-4 px-6 text-primary">YES</td>
+                <td className="py-4 px-6 text-9c76cc">YES</td>
               </tr>
 
               {/* Row 3 */}
@@ -49,7 +49,7 @@ const ComparisonTable = () => {
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
-                <td className="py-4 px-6 text-primary">YES</td>
+                <td className="py-4 px-6 text-9c76cc">YES</td>
               </tr>
 
               {/* Row 4 */}
@@ -59,7 +59,7 @@ const ComparisonTable = () => {
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
-                <td className="py-4 px-6 text-primary">YES</td>
+                <td className="py-4 px-6 text-9c76cc">YES</td>
               </tr>
 
               {/* Row 5 */}
@@ -68,7 +68,7 @@ const ComparisonTable = () => {
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
                 <td className="py-4 px-6 text-red-500 text-xl">✖</td>
-                <td className="py-4 px-6 text-primary">YES</td>
+                <td className="py-4 px-6 text-9c76cc">YES</td>
               </tr>
             </tbody>
           </table>

@@ -116,3 +116,60 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* ============================= */
+/* REACH CUT PLANNER COLORS */
+/* ============================= */
+
+/* Background colors */
+.bg-6f50aa { background-color: #6F50AA; }
+.bg-9c76cc { background-color: #9C76CC; }
+.bg-f8b8d1 { background-color: #F8B8D1; }
+.bg-ea6aad { background-color: #EA6AAD; }
+.bg-a52356 { background-color: #A52356; }
+
+/* Text colors */
+.text-6f50aa { color: #6F50AA; }
+.text-9c76cc { color: #9C76CC; }
+.text-f8b8d1 { color: #F8B8D1; }
+.text-ea6aad { color: #EA6AAD; }
+.text-a52356 { color: #A52356; }
+
+/* Icon filters for PNG icons */
+
+/* #6F50AA */
+.icon-6f50aa {
+  filter: brightness(0) saturate(100%)
+    invert(36%) sepia(22%) saturate(1940%)
+    hue-rotate(247deg) brightness(90%) contrast(92%);
+}
+
+/* #9C76CC */
+.icon-9c76cc {
+  filter: brightness(0) saturate(100%)
+    invert(60%) sepia(20%) saturate(1130%)
+    hue-rotate(245deg) brightness(95%) contrast(92%);
+}
+
+/* #F8B8D1 */
+.icon-f8b8d1 {
+  filter: brightness(0) saturate(100%)
+    invert(86%) sepia(16%) saturate(670%)
+    hue-rotate(315deg) brightness(102%) contrast(95%);
+}
+
+/* #EA6AAD */
+.icon-ea6aad {
+  filter: brightness(0) saturate(100%)
+    invert(54%) sepia(47%) saturate(1760%)
+    hue-rotate(320deg) brightness(95%) contrast(92%);
+}
+
+/* #A52356 */
+.icon-a52356 {
+  filter: brightness(0) saturate(100%)
+    invert(21%) sepia(82%) saturate(2930%)
+    hue-rotate(330deg) brightness(90%) contrast(92%);
+}
